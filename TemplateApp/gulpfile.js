@@ -31,6 +31,8 @@ gulp.task('watch', function() {
     gulp.watch(path.HTML, ['copyHtml']);
     gulp.watch(path.CSS, ['copyCss']);
 
+    process.env.NODE_ENV = 'development';
+
     var watcher = watchify(browserify({
         entries: [path.ENTRY_POINT],
         transform: [babelify],
