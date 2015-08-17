@@ -52,7 +52,7 @@ gulp.task('watch', function() {
 });
 
 gulp.task('build', function() {
-    process.env.NODE_ENV = 'production'
+    process.env.NODE_ENV = 'production';
     browserify({
         entries: [path.ENTRY_POINT],
         transform: [babelify]
