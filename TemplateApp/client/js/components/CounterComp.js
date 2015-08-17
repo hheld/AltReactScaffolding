@@ -15,7 +15,8 @@ class CounterComp extends React.Component {
 }
 
 CounterComp.propTypes = {
-    counter: React.PropTypes.number
+    counter: React.PropTypes.number,
+    onIncrementCounter: React.PropTypes.func.isRequired
 };
 
 CounterComp.defaultProps = {
